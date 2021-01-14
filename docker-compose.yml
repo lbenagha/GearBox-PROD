@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  bloodwing:
+    image: spark-techtests/devops-bloodwing:${TAG:-latest}
+    ports:
+      - "8080:8080"
+    networks:
+      - spark-techtests-devops
+
+networks:
+  spark-techtests-devops: {}
