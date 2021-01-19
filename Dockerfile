@@ -16,7 +16,7 @@ COPY --from=builder /app/src/bloodwing/bin /app/bin
 COPY start.sh ./bin
 RUN chmod +x ./bin/start.sh
 
-EXPOSE 8080
+EXPOSE 9090
 
 WORKDIR /app/
 
